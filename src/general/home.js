@@ -100,13 +100,10 @@ const initSwiper = function () {
 
       slideActiveClass: "is-active",
     });
-
-    console.log("activated");
   } else if (onTablet == true && swiperCases != undefined) {
     swiperCases.destroy();
     swiperBlog.destroy();
     swiperCases = undefined;
-    console.log("destroyed");
   }
 };
 
@@ -115,4 +112,5 @@ initSwiper(); // Run change on load
 $(window).on("orientationchange resize", function () {
   // Run change on resize
   initSwiper();
+  console.log("resize");
 });
