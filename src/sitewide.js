@@ -144,16 +144,3 @@ window.addEventListener("DOMContentLoaded", (event) => {
     },
   });
 });
-
-//–––––––––––––––––––––––––Change Nav Text–––––––––––––––––––––––––––––––––––––
-
-const changeText = document.querySelector("#nav_dd_button_text");
-const changeTextTrigger = document.querySelector("#nav_dd_button");
-
-changeTextTrigger.addEventListener("click", function () {
-  if (changeText.textContent == "Meny") {
-    changeText.textContent = "Stäng";
-  } else {
-    changeText.textContent = "Meny";
-  }
-});
