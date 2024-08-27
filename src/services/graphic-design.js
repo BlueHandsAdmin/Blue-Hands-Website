@@ -83,7 +83,6 @@ const initSwiper = function () {
       swiper = new Swiper(".is-" + index, {
         speed: 700,
         freeMode: true,
-        grabCursor: true,
         mousewheel: true,
         keyboard: true,
         slidesPerView: "auto",
